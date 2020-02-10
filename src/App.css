@@ -1,0 +1,111 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.detail {
+  width: 350px;
+  padding: 16px;
+  text-align: center;
+  background-color: #84e184;
+  border: 1px solid #6fdc6f;
+  box-shadow: 0 2px 3px #ccc;
+  margin: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 15px;
+}
+
+.survey input {
+  padding: 10px;
+  margin: 10px;
+}
+
+button {
+  padding: 10px;
+  margin: 10px;
+}
+
+.Welcome ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.Welcome li {
+  display: inline-block;
+  margin: 20px;
+}
+
+.Welcome a {
+  text-decoration: none;
+  color: black;
+}
+
+.Welcome a:hover {
+  color: orangered;
+}
+
+.Welcome .welcome-msg {
+  width: 100%;
+  height: 45px;
+  background-color: #009900;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+  font-size: 23px;
+  color: black;
+}
+
+.header {
+  padding: 10px;
+  text-align: center;
+  background: #009900;
+  color: white;
+  font-size: 30px;
+}
+
+.form-div {
+  display: inline-block;
+  border-radius: 8px;
+  background: #009900;
+  padding: 20px;
+  margin: 20px;
+  font-size: 20px;
+}
+
+.login-form input {
+  padding: 3px;
+}
+
+.surveyButton {
+  margin: 5px;
+  background-color: #1e7b1e;
+  border-radius: 8px;
+}
