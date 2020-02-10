@@ -35,13 +35,17 @@ function Login(props) {
       <div className="form-div">
         <form className="login-form">
           <label className="login-label"> Username </label>
-          <input type="text" placeholder="Username" onChange={handleUserName} />
+          <input
+            type="text"
+            placeholder="Enter your username"
+            onChange={handleUserName}
+          />
           <br />
           <br />
           <label className="login-label">Password </label>
           <input
             type="password"
-            placeholder="Password"
+            placeholder="Enter your password"
             onChange={handlePassword}
           />
           <br />
