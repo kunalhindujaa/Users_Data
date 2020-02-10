@@ -46,7 +46,7 @@ function Login(props) {
           />
           <br />
           <br />
-          <button className="btn btn-primary" onClick={handleClick}>
+          <button className="btn btn- custBtn" onClick={handleClick}>
             {" "}
             Login{" "}
           </button>

@@ -11,15 +11,21 @@ class DisplayDetails extends Component {
   render() {
     return (
       <div>
-        <p> Name : {this.state.name}</p>
-        <br />
-        <p> Contact Number : {this.state.phone}</p>
-        <br />
-        <p> Gender : {this.state.gender}</p>
-        <br />
-        <p> Previously registered for the course : {this.state.registered} </p>
-        <br />
-        <p> Course : {this.state.listItem}</p>
+        <h1 className="header"> Registration Details </h1>
+        <div class="register-details">
+          <p> Name : {this.state.name}</p>
+          <br />
+          <p> Contact Number : {this.state.phone}</p>
+          <br />
+          <p> Gender : {this.state.gender}</p>
+          <br />
+          <p>
+            {" "}
+            Previously registered for the course : {this.state.registered}{" "}
+          </p>
+          <br />
+          <p> Course : {this.state.listItem}</p>
+        </div>
       </div>
     );
   }
