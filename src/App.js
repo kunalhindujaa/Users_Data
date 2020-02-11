@@ -4,8 +4,8 @@ import Welcome from "./components/Welcome";
 import Login from "./components/Login";
 import Home from "./components/Home";
 import Survey from "./components/Survey";
-import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
 import DisplayDetails from "./components/DisplayDetails";
 
 function App() {
