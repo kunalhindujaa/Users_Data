@@ -32,6 +32,7 @@ class Survey extends Component {
     this.setState({ phone: "" });
     this.setState({ listItem: "React" });
     this.setState({ gender: "" });
+    this.setState({ registered: "No" });
   };
 
   handleCheckBoxChange = event => {
@@ -109,7 +110,7 @@ class Survey extends Component {
             onClick={this.handleCheckBoxChange}
             name="check2"
             value="No"
-          />{" "}
+          />
           No
           <br />
           <br />

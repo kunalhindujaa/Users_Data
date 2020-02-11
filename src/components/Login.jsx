@@ -50,12 +50,12 @@ function Login(props) {
           />
           <br />
           <br />
-          <button className="btn btn- custBtn" onClick={handleClick}>
-            {" "}
-            Login{" "}
+          <button className="btn btn-primary custBtn" onClick={handleClick}>
+            Login
           </button>
         </form>
       </div>
+      <footer> © 2020 Data By Bay. All rights reserved</footer>
     </div>
   );
 }
