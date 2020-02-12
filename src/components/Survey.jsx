@@ -46,7 +46,7 @@ class Survey extends Component {
       state: { ...this.state }
     });
     // console.log("Name:"+this.state.name);
-    // event.preventDefault();
+    ///event.preventDefault();
   };
 
   render() {
