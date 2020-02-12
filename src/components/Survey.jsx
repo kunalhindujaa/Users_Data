@@ -33,6 +33,7 @@ class Survey extends Component {
     this.setState({ listItem: "React" });
     this.setState({ gender: "" });
     this.setState({ registered: "No" });
+    event.preventDefault();
   };
 
   handleCheckBoxChange = event => {
