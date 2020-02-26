@@ -8,23 +8,22 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import DisplayDetails from "./components/DisplayDetails";
 
-function App() {
+const App = () => {
   return (
     <BrowserRouter>
       <div className="App">
         <Switch>
           <Route path="/" exact component={Login} />
 
-          <Route path="/welcome" component={Welcome} />
+          <Route exact path="/welcome" component={Welcome} />
 
-          <Route path="/home" component={Home} />
+          <Route exact path="/home" component={Home} />
 
-          <Route path="/survey-form" component={Survey} />
+          <Route exact path="/survey-form" component={Survey} />
 
           <Route
             path="/display-details"
             exact
-            strict
             render={props => <DisplayDetails {...props} />}
           />
         </Switch>

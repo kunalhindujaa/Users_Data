@@ -1,6 +1,6 @@
 import React from "react";
 
-function Detail(props) {
+const Detail = props => {
   return (
     <div className="detail">
       <p> Name : {props.userName}</p>
@@ -8,6 +8,6 @@ function Detail(props) {
       <p> Website : {props.website}</p>
     </div>
   );
-}
+};
 
 export default Detail;

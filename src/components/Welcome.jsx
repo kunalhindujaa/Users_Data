@@ -1,7 +1,9 @@
 import React from "react";
 import LockOpenIcon from "@material-ui/icons/LockOpen";
+import { Link } from "react-router-dom";
 
-function Welcome(props) {
+//Use LInk instead of <a>
+const Welcome = props => {
   return (
     <div class="Welcome">
       <div className="welcome-msg">
@@ -12,16 +14,17 @@ function Welcome(props) {
         <nav>
           <ul className="links">
             <li>
-              <a href="/home"> Home </a>{" "}
+              <Link to="/home">Home</Link>
+              {/* <a href="/home"> Home </a>{" "} */}
             </li>
             <li>
-              <a href="/survey-form"> Course Registration </a>{" "}
+              <Link to="/survey-form"> Course Registration</Link>
             </li>
           </ul>
         </nav>
       </header>
     </div>
   );
-}
+};
 
 export default Welcome;

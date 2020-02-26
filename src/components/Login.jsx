@@ -3,7 +3,7 @@ import LockOpenIcon from "@material-ui/icons/LockOpen";
 // import { Route } from "react-router-dom";
 // import Welcome from "./Welcome";
 
-function Login(props) {
+const Login = props => {
   const name = "Kunal";
   const pass = "abc";
   const [userName, setUserName] = useState("");
@@ -17,7 +17,7 @@ function Login(props) {
     setPassword(event.target.value);
   }
 
-  const [value, setValue] = useState(false);
+  // const [value, setValue] = useState(false);
 
   function handleClick() {
     if (userName === name && password === pass) {
@@ -58,6 +58,6 @@ function Login(props) {
       <footer> © 2020 Data By Bay. All rights reserved</footer>
     </div>
   );
-}
+};
 
 export default Login;

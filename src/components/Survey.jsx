@@ -11,21 +11,31 @@ class Survey extends Component {
     registered: "No"
   };
 
-  handleName = event => {
-    this.setState({ name: event.target.value });
+  handleChange = event => {
+    let name = event.target.name;
+    let value = event.target.value;
+    this.setState({ [name]: value });
   };
 
-  handlePhone = event => {
-    this.setState({ phone: event.target.value });
+  handleClick = event => {
+    this.setState({ [event.target.name]: event.target.value });
   };
 
-  handleListChange = event => {
-    this.setState({ listItem: event.target.value });
-  };
+  // handleName = event => {
+  //   this.setState({ name: event.target.value });
+  // };
 
-  handleRadioChange = event => {
-    this.setState({ gender: event.target.value });
-  };
+  // handlePhone = event => {
+  //   this.setState({ phone: event.target.value });
+  // };
+
+  // handleListChange = event => {
+  //   this.setState({ listItem: event.target.value });
+  // };
+
+  // handleRadioChange = event => {
+  //   this.setState({ gender: event.target.value });
+  // };
 
   handleReset = event => {
     this.setState({ name: "" });
@@ -36,9 +46,9 @@ class Survey extends Component {
     event.preventDefault();
   };
 
-  handleCheckBoxChange = event => {
-    this.setState({ registered: event.target.value });
-  };
+  // handleCheckBoxChange = event => {
+  //   this.setState({ registered: event.target.value });
+  // };
 
   handleSubmit = () => {
     return this.props.history.push({
@@ -57,19 +67,21 @@ class Survey extends Component {
           <label>Name </label>
           <input
             type="text"
+            name="name"
             placeholder="Enter your name"
             value={this.state.name}
-            onChange={this.handleName}
+            onChange={this.handleChange}
           />
           <br />
           <br />
           <label>Contact Number </label>
           <input
             type="tel"
+            name="phone"
             placeholder="Enter your number"
             length="10"
             value={this.state.phone}
-            onChange={this.handlePhone}
+            onChange={this.handleChange}
           />
           <br />
           <br />
@@ -78,20 +90,24 @@ class Survey extends Component {
             type="radio"
             name="gender"
             value="Male"
-            onChange={this.handleRadioChange}
+            onChange={this.handleChange}
           />{" "}
           Male
           <input
             type="radio"
             name="gender"
             value="Female"
-            onChange={this.handleRadioChange}
+            onChange={this.handleChange}
           />{" "}
           Female
           <br />
           <br />
           <label>Course </label>
-          <select value={this.listItem} onChange={this.handleListChange}>
+          <select
+            value={this.listItem}
+            name="listItem"
+            onChange={this.handleChange}
+          >
             <option value="React">React</option>
             <option value="Angular">Angular</option>
             <option value="Vue">Vue</option>
@@ -101,14 +117,14 @@ class Survey extends Component {
           <label> Have you previously registered for the course? </label>
           <input
             type="checkbox"
-            onClick={this.handleCheckBoxChange}
+            onClick={this.handleClick}
             name="check1"
             value="Yes"
           />
           Yes
           <input
             type="checkbox"
-            onClick={this.handleCheckBoxChange}
+            onClick={this.handleClick}
             name="check2"
             value="No"
           />

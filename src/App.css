@@ -84,12 +84,12 @@ button {
   margin: 20px;
 }
 
-.Welcome a {
+.Welcome Link {
   text-decoration: none;
   color: black;
 }
 
-.Welcome a:hover {
+.Welcome Link:hover {
   color: orangered;
 }
 

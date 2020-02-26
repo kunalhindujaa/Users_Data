@@ -8,13 +8,11 @@ class Home extends Component {
   };
 
   componentDidMount() {
-    const users = axios
-      .get("https://jsonplaceholder.typicode.com/users")
-      .then(response => {
-        const users = response.data.splice(0, 5);
-        this.setState({ users: response.data });
-        //console.log(response);
-      });
+    axios.get("https://jsonplaceholder.typicode.com/users").then(response => {
+      const users = response.data.splice(0, 5);
+      this.setState({ users: users });
+      //console.log(response);
+    });
   }
   render() {
     const users = this.state.users.map(user => {
