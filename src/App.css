@@ -2,17 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 footer {
   position: absolute;
   text-align: center;
@@ -38,6 +27,7 @@ footer {
 
 .login-label {
   padding: 10px;
+  color: white;
 }
 
 .detail,
@@ -45,7 +35,7 @@ footer {
   width: 350px;
   padding: 16px;
   text-align: center;
-  background-color: #84e184;
+  background-color: #ce9fdf;
   border: 1px solid black;
   box-shadow: 0 2px 3px #ccc;
   margin: 10px;
@@ -55,14 +45,15 @@ footer {
   border-radius: 15px;
 }
 .btn-primary {
-  background-color: #006622;
+  background-color: #671d9d;
   color: black;
+  font-weight: bold;
 }
 
-.btn-primary:hover {
+/* .btn-primary:hover {
   background-color: #003311;
   color: white;
-}
+} */
 .survey input {
   padding: 10px;
   margin: 10px;
@@ -84,22 +75,27 @@ button {
   margin: 20px;
 }
 
-.Welcome Link {
+/* .Welcome link {
   text-decoration: none;
   color: black;
 }
 
-.Welcome Link:hover {
-  color: orangered;
+.Welcome link:hover {
+  color: #550a8a;
+} */
+
+.links {
+  color: #550a8a;
+  text-decoration: none;
 }
 
 .Welcome .welcome-msg {
-  width: 1260px;
+  width: 100%;
   height: 49px;
-  background-color: #00b300;
+  background-color: #6d2c85;
   text-align: center;
   padding: 5px;
-  margin: 5px;
+  /* margin: 5px; */
   font-size: 23px;
   color: black;
 }
@@ -107,15 +103,16 @@ button {
 .header {
   padding: 10px;
   text-align: center;
-  background: #00b300;
+  background: #6d2c85;
   color: white;
   font-size: 30px;
+  font-weight: bold;
 }
 
 .form-div {
   display: inline-block;
   border-radius: 35px;
-  background: #00b300;
+  background: #6d2c85;
   padding: 20px;
   margin: 20px;
   width: 400px;
@@ -128,6 +125,21 @@ button {
 
 .surveyButton {
   margin: 5px;
-  background-color: #1e7b1e;
+  background-color: #6d2c85;
   border-radius: 8px;
+}
+.detail-table {
+  margin: auto;
+  width: 50%;
+  padding: 45px;
+}
+.displayTable {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.displayTable th,
+td {
+  border: 2px solid black;
+  padding: 10px;
 }

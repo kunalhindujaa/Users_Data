@@ -6,19 +6,24 @@ import { Link } from "react-router-dom";
 const Welcome = props => {
   return (
     <div class="Welcome">
-      <div className="welcome-msg">
+      <div className="header">
         {" "}
         <LockOpenIcon /> Data By Bay{" "}
       </div>
       <header>
         <nav>
-          <ul className="links">
+          <ul>
             <li>
-              <Link to="/home">Home</Link>
+              <Link classname="links" to="/home">
+                Home
+              </Link>
               {/* <a href="/home"> Home </a>{" "} */}
             </li>
             <li>
-              <Link to="/survey-form"> Course Registration</Link>
+              <Link classname="links" to="/survey-form">
+                {" "}
+                Course Registration
+              </Link>
             </li>
           </ul>
         </nav>
